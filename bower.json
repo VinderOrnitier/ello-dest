@@ -1,0 +1,14 @@
+{
+  "name": "ello_dest",
+  "version": "0.0.0",
+  "authors": [
+    "Vinder Ornitier <ornitier62@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "ornitier.ru",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "animate.css": "~3.4.0"
+  }
+}
