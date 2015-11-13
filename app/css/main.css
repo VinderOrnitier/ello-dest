@@ -44,13 +44,60 @@ html {
   font-weight: normal;
   src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg#fontawesome") format("svg"); }
 
-h1 {
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+.body-wrapper h1 {
   color: gold;
   font-family: "helveticaneuecyr-thin-webfont", sans-serif;
-  font-size: 40px; }
+  font-size: 40px;
+  margin: 0; }
 
 i.fa.fa-hand-peace-o {
-  color: #000;
+  color: #126ae3;
   font-size: 40px; }
+
+body {
+  position: relative;
+  min-width: 320px;
+  background-color: #e6e6e6;
+  font-family: "helveticaneuecyr-medium-webfont", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden; }
+
+.body-wrapper {
+  position: relative;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 1, 0.75);
+          box-shadow: 0 0 15px rgba(0, 0, 1, 0.75); }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=maps/main.css.map */
