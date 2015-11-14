@@ -2,17 +2,56 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.main-content .features-wrap
+		justify-content: center
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
 
+	.menu-nav_wrap .menu-nav_item
+		margin-right: 10px
+
+	.menu-social_wrap .menu-social_item
+		margin-right: 5px
+
+	.music-access
+		margin-bottom: 25px
+
+	.music-access ul
+		text-align: center
+
+@media only screen and (max-width : 812px)
+	.menu-social_wrap .menu-social_item
+		margin-right: 3px
+
+	.top-menu .hamburger-menu
+		display: block
+
+	.menu-nav
+		display: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.menu-social .menu-social_wrap, .menu-nav .menu-nav_wrap
+		text-align: center
+
+	.menu-social
+		margin-bottom: 10px
+
+	.menu-nav_wrap .menu-nav_item
+		margin-bottom: 10px
+
+	.menu-social_wrap .menu-social_item
+		margin-right: 50px
+
+	.menu-nav .menu-nav_item
+		display: block
+
+	footer .footer_logo .footer-hamburger-menu
+		display: block
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -37,8 +76,23 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.enter .enter_text
+		display: none
 
+	.enter .enter_icon i
+		display: block
+		left: -80px
+
+	footer .footer-nav_wrap
+		margin-top: 20px
+
+@media only screen and (max-width : 350px)
+	.enter select
+		display: none
+
+	.enter .enter_icon i
+		display: block
+		left: -25px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -66,6 +120,9 @@
 @media only screen and (min-width : 992px)
 	/**/
 
+@media only screen and (min-width : 813px)
+	.menu-nav
+		display: block !important
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
