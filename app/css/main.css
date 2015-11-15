@@ -62,7 +62,16 @@ html {
   .music-access {
     margin-bottom: 25px; }
   .music-access ul {
-    text-align: center; } }
+    text-align: center; }
+  .form-contacts .contacts-group .help-block.with-errors {
+    right: 15px;
+    top: -40px; }
+  .help-block .list-unstyled::before {
+    right: 40%;
+    top: 131%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); } }
 
 @media only screen and (max-width: 812px) {
   .menu-social_wrap .menu-social_item {
@@ -647,6 +656,9 @@ a.forgot {
 
 .inside-us-wrap .buttons {
   font-family: 'helveticaneuecyr-bold-webfont', sans-serif; }
+
+.contacts-form .form-horizontal .control-label {
+  padding-top: 0; }
 
 .contacts-group label {
   padding-top: 0;
