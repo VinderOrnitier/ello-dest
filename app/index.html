@@ -39,7 +39,7 @@
               </div>
             </div>
             <div class="col-xs-4">
-              <div class="enter"><a href="#" class="enter_icon"><i class="fa fa-sign-in"></i></a><a href="#" class="enter_text">Войти</a>
+              <div class="enter"><a href="#enter-form" class="enter_icon"><i class="fa fa-sign-in"></i></a><a href="#enter-form" class="enter_text">Войти</a>
                 <select>
                   <option value="ru">Рус</option>
                   <option value="eng">Eng</option>
@@ -178,6 +178,98 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid inside-us">
+        <div class="col-md-6 col-md-offset-1 col-sm-12">
+          <div class="inside-us-wrap">
+            <h1>Лучший способ распространять видео для интернет-пользователей</h1>
+            <p>Присоединяйся к нашему успешному и независимому сообществу</p>
+            <ul>
+              <li>Зарабатывай на своем творчестве</li>
+              <li>Распространи видио всего в два клика на популярных платформах</li>
+              <li>Найди новых поклонников</li>
+            </ul>
+            <div class="btn-wrapp"><a href="#enter-form" class="buttons to-form">Разместить видео</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid contacts">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contacts-form">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <form role="form" data-toggle="validator" class="form-horizontal form-contacts">
+                <fieldset>
+                  <!-- Form Name-->
+                  <legend>Сообщение</legend>
+                  <!-- Select Basic-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="selectbasic" class="control-label">Раздел обращения</label>
+                    </div>
+                    <div class="col-md-4">
+                      <select id="selectbasic" name="selectbasic" class="form-control contacts-select">
+                        <option value="1">Партнерство</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="name" class="control-label">Имя</label><span class="help-block no-act">(не обязательно)</span>
+                    </div>
+                    <div class="col-md-4">
+                      <input id="name" name="name" type="name" placeholder="Ваше имя" class="form-control input-md">
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="email" class="control-label">Email</label><span class="help-block">(для ответа)</span>
+                    </div>
+                    <div class="col-md-4">
+                      <input id="email" name="email" type="email" placeholder="Ваш Email" data-error="Пожалуйста, укажите email" required="" class="form-control input-md">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="theme" class="control-label">Тема сообщения</label><span class="help-block">(для быстрой обработки)</span>
+                    </div>
+                    <div class="col-md-8">
+                      <input id="theme" name="theme" type="text" placeholder="" class="form-control input-md">
+                    </div>
+                  </div>
+                  <!-- Textarea-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="massage" class="control-label">Текст</label>
+                    </div>
+                    <div class="col-md-8">
+                      <textarea id="massage" name="massage" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group contacts-group">
+                    <div class="col-md-12">
+                      <div class="recaptcha-box">
+                        <div class="contacts-recaptcha">
+                          <div data-sitekey="your_site_key" class="g-recaptcha"></div><br>
+                          <input type="submit" value="Отправить" class="buttons">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="container-fluid footer_wrap">
           <div class="row footer_row">
@@ -201,7 +293,40 @@
         </div>
       </footer>
     </div>
-    <div class="hidden"></div><!--[if lt IE 9]>
+    <div class="hidden">
+      <div id="enter-form" class="log-tabs">
+        <ul>
+          <li>Вход</li>
+          <li>Регистрация</li>
+        </ul>
+        <div>
+          <div>
+            <input type="email" name="email" placeholder="Email" autocomplete="on" required="">
+            <input type="password" name="password" placeholder="Пароль" required="">
+            <div class="btn-wrapp">
+              <button class="buttons">Войти</button>
+            </div><a href="#forgot-form" class="forgot">Забыли пароль?</a>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email" autocomplete="on" required="">
+            <input type="password" name="password" placeholder="Пароль" required="">
+            <input type="password" name="password-sec" placeholder="Повторить пароль" required="">
+            <div class="btn-wrapp">
+              <button class="buttons">Зарегистрироваться</button>
+            </div>
+            <p>Регистрируясь, вы соглашаетесь с нашими условиями использования и политикой конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+      <form id="forgot-form" class="forms">
+        <h3>Забыли пароль?</h3>
+        <p>Не переживайте. Просто введите свою эл. почту или логин, и мы вышлем инструкцию по восстановлению</p>
+        <input id="forgot-email" type="email" name="forgot-email" placeholder="Логин или Email" required="">
+        <div class="btn-wrapp">
+          <button class="buttons">Bосстановить пароль</button>
+        </div><a href="#enter-form" class="log-enter back-to">Назад к форме входа</a>
+      </form>
+    </div><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
@@ -221,6 +346,6 @@
     <script src="libs/plugins-scroll/plugins-scroll.js"></script>
     <script src="libs/waypoints/waypoints.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- endbuild-->
+    <!-- endbuild--><script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
   </body>
 </html>

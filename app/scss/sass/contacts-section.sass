@@ -1,0 +1,128 @@
+.contacts-group
+	label
+		padding-top: 0
+		font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+		font-size: 16px
+	input, select, textarea
+		font-family: 'helveticaneuecyr-roman-webfont', sans-serif
+		font-size: 18px
+	span.help-block
+		margin: 0
+		font-size: 14px
+		font-family: 'helveticaneuecyr-roman-webfont', sans-serif
+
+.help-block.no-act
+	color: #ccc
+
+.contacts-group .help-block.with-errors
+	position: absolute
+	right: -200px
+	top: 4px
+	background-color: #a94442
+	color: #fff
+	padding: 0px 10px
+	margin: 0
+
+.list-unstyled
+	position: relative
+	&::before
+		right: 105%
+		top: 51%
+		border: solid transparent
+		content: ''
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+		border-width: 10px
+		margin-top: -10px
+		border-right-color: #a94442
+
+.with-errors ul.list-unstyled
+	margin-bottom: 0
+	line-height: 2
+	font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+	font-size: 14px
+
+.form-contacts legend
+	border-bottom: none
+	font-size: 30px
+	text-transform: uppercase
+	text-align: center
+	font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+
+.contacts-group
+	textarea.form-control
+		height: 200px
+	.form-control
+		height: 40px
+
+.contacts .breadcrumb
+	margin: 0
+	padding: 10px 0
+	border: none
+	background: none
+	font-family: 'helveticaneuecyr-roman-webfont', sans-serif
+	font-size: 14px
+	border-top: 1px solid #ccc
+	border-radius: 0
+	> li
+		padding: 0 10px
+		position: relative
+		white-space: nowrap
+	li
+		color: #ccc
+		&:first-child
+			padding-left: 0
+		a
+			color: inherit
+		&:last-child
+			color: #999999
+			&:after
+				display: none
+	> li
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 6px
+			right: -4px
+			width: 7px
+			height: 7px
+			border-right: 1px solid #959595
+			border-bottom: 1px solid #959595
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:before
+			display: none
+
+input.buttons
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+	width: 100%
+	display: inline-block
+	padding: 20px 35px
+	background-color: #126AE3
+	border-radius: 15px
+	border: none
+	font-size: 18px
+	outline: none
+
+.recaptcha-box
+	background-color: #e7f0fc
+	border-bottom-left-radius: 15px
+	border-bottom-right-radius: 15px
+
+.contacts-recaptcha
+	max-width: 300px
+	margin: 0 auto
+	padding: 20px 0 25px
+
+.form-control.contacts-select
+	background: url(http://music.bigdig.com.ua/images/sprite/arrow-down-sm.png) no-repeat right
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none

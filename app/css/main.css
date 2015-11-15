@@ -106,6 +106,17 @@ html {
   .enter .enter_icon i {
     display: block;
     left: -80px; }
+  .mfp-content .log-tabs, .mfp-content .forms {
+    padding: 25px 10px; }
+  .forms .btn-wrapp .buttons {
+    padding: 20px 25px; }
+  .inside-us .inside-us-wrap ul {
+    padding-left: 0;
+    width: auto; }
+  .inside-us .btn-wrapp .buttons {
+    padding: 20px 25px; }
+  .form-group .recaptcha-box {
+    background-color: transparent; }
   footer .footer-nav_wrap {
     margin-top: 20px; } }
 
@@ -451,6 +462,323 @@ body {
 .advantage_descr p {
   font-family: "helveticaneuecyr-medium-webfont", sans-serif;
   font-size: 1em; }
+
+.forms {
+  position: relative;
+  background-color: #fff;
+  max-width: 470px;
+  padding: 80px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center; }
+  .forms input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 50px;
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif; }
+  .forms button {
+    margin-bottom: 50px;
+    outline: none; }
+  .forms h3 {
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #2f2f2f; }
+  .forms p {
+    font-size: 16px;
+    color: #2f2f2f;
+    margin-bottom: 25px;
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif; }
+
+.form-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 50px; }
+
+.mfp-form.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+  .mfp-form.mfp-bg.mfp-ready {
+    opacity: 0.8; }
+  .mfp-form.mfp-bg.mfp-removing {
+    opacity: 0; }
+
+.mfp-form.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out; }
+
+.mfp-form.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-form.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+.forms .mfp-close {
+  opacity: 0; }
+
+.form-title a {
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'helveticaneuecyr-medium-webfont', sans-serif;
+  font-size: 18px; }
+  .form-title a:hover {
+    text-decoration: none; }
+  .form-title a:last-child {
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+    color: #999999; }
+
+a.forgot {
+  font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+  font-size: 16px; }
+
+.log-enter.back-to {
+  font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+  font-size: 16px;
+  text-decoration: underline; }
+
+.log-tabs {
+  position: relative;
+  background-color: #fff;
+  max-width: 470px;
+  padding: 60px 80px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center; }
+  .log-tabs > div {
+    padding-top: 10px; }
+  .log-tabs ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0; }
+    .log-tabs ul li {
+      color: #999;
+      font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+      text-transform: uppercase; }
+      .log-tabs ul li.active {
+        color: #000;
+        font-family: 'helveticaneuecyr-medium-webfont', sans-serif; }
+        .log-tabs ul li.active:hover {
+          color: #000;
+          font-family: 'helveticaneuecyr-medium-webfont', sans-serif; }
+  .log-tabs input {
+    display: block;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 50px;
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif; }
+  .log-tabs button {
+    margin-bottom: 50px;
+    outline: none;
+    margin-bottom: 50px;
+    outline: none;
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif;
+    font-size: 18px; }
+  .log-tabs p {
+    font-size: 16px;
+    color: #2f2f2f;
+    font-family: 'helveticaneuecyr-light-webfont', sans-serif; }
+  .log-tabs .mfp-close {
+    opacity: 0; }
+
+.btn-wrapp .buttons {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  padding: 20px 35px;
+  background-color: #126AE3;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  outline: none; }
+
+.inside-us {
+  background: url(http://music.bigdig.com.ua/images/background/inside-us-bg.png) center no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  height: 100%;
+  width: 100%;
+  color: #fff; }
+  .inside-us a:hover {
+    text-decoration: none; }
+
+.inside-us-wrap h1 {
+  margin: 90px 0 0px;
+  font-family: 'helveticaneuecyr-medium-webfont';
+  font-size: 30px; }
+
+.inside-us-wrap p {
+  margin: 30px 0;
+  font-size: 20px;
+  font-family: 'helveticaneuecyr-thin-webfont', sans-serif; }
+
+.inside-us-wrap ul {
+  padding-left: 40px;
+  width: 350px;
+  list-style: inherit;
+  margin-bottom: 30px;
+  font-family: 'helveticaneuecyr-roman-webfont';
+  font-size: 18px; }
+
+.inside-us-wrap .buttons {
+  font-family: 'helveticaneuecyr-bold-webfont', sans-serif; }
+
+.contacts-group label {
+  padding-top: 0;
+  font-family: 'helveticaneuecyr-medium-webfont', sans-serif;
+  font-size: 16px; }
+
+.contacts-group input, .contacts-group select, .contacts-group textarea {
+  font-family: 'helveticaneuecyr-roman-webfont', sans-serif;
+  font-size: 18px; }
+
+.contacts-group span.help-block {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'helveticaneuecyr-roman-webfont', sans-serif; }
+
+.help-block.no-act {
+  color: #ccc; }
+
+.contacts-group .help-block.with-errors {
+  position: absolute;
+  right: -200px;
+  top: 4px;
+  background-color: #a94442;
+  color: #fff;
+  padding: 0px 10px;
+  margin: 0; }
+
+.list-unstyled {
+  position: relative; }
+  .list-unstyled::before {
+    right: 105%;
+    top: 51%;
+    border: solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-top: -10px;
+    border-right-color: #a94442; }
+
+.with-errors ul.list-unstyled {
+  margin-bottom: 0;
+  line-height: 2;
+  font-family: 'helveticaneuecyr-medium-webfont', sans-serif;
+  font-size: 14px; }
+
+.form-contacts legend {
+  border-bottom: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'helveticaneuecyr-medium-webfont', sans-serif; }
+
+.contacts-group textarea.form-control {
+  height: 200px; }
+
+.contacts-group .form-control {
+  height: 40px; }
+
+.contacts .breadcrumb {
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+  background: none;
+  font-family: 'helveticaneuecyr-roman-webfont', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+  .contacts .breadcrumb > li {
+    padding: 0 10px;
+    position: relative;
+    white-space: nowrap; }
+  .contacts .breadcrumb li {
+    color: #ccc; }
+    .contacts .breadcrumb li:first-child {
+      padding-left: 0; }
+    .contacts .breadcrumb li a {
+      color: inherit; }
+    .contacts .breadcrumb li:last-child {
+      color: #999999; }
+      .contacts .breadcrumb li:last-child:after {
+        display: none; }
+  .contacts .breadcrumb > li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: -4px;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+  .contacts .breadcrumb > li:before {
+    display: none; }
+
+input.buttons {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  padding: 20px 35px;
+  background-color: #126AE3;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  outline: none; }
+
+.recaptcha-box {
+  background-color: #e7f0fc;
+  -webkit-border-bottom-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+          border-bottom-right-radius: 15px; }
+
+.contacts-recaptcha {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 0 25px; }
+
+.form-control.contacts-select {
+  background: url(http://music.bigdig.com.ua/images/sprite/arrow-down-sm.png) no-repeat right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 footer {
   background-color: #2f2f2f; }

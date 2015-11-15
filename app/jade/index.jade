@@ -29,8 +29,37 @@ html(lang='ru')
 			include ./templates/header.jade
 			include ./templates/slider-section.jade
 			include ./templates/main.jade
+			include ./templates/video-section.jade
+			include ./templates/contacts-section.jade
 			include ./templates/footer.jade
 		.hidden
+			#enter-form.log-tabs
+				ul
+					li Вход
+					li Регистрация
+				div
+					div
+						input(type='email', name='email', placeholder='Email', autocomplete='on', required='')
+						input(type='password', name='password', placeholder='Пароль', required='')
+						.btn-wrapp
+							button.buttons Войти
+						a.forgot(href='#forgot-form') Забыли пароль?
+					div
+						input(type='email', name='email', placeholder='Email', autocomplete='on', required='')
+						input(type='password', name='password', placeholder='Пароль', required='')
+						input(type='password', name='password-sec', placeholder='Повторить пароль', required='')
+						.btn-wrapp
+							button.buttons Зарегистрироваться
+						p
+							| Регистрируясь, вы соглашаетесь с нашими условиями использования и политикой конфиденциальности
+			form#forgot-form.forms
+				h3 Забыли пароль?
+				p
+					| Не переживайте. Просто введите свою эл. почту или логин, и мы вышлем инструкцию по восстановлению
+				input#forgot-email(type='email', name='forgot-email', placeholder='Логин или Email', required='')
+				.btn-wrapp
+					button.buttons Bосстановить пароль
+				a.log-enter.back-to(href='#enter-form') Назад к форме входа
 		<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
@@ -47,3 +76,4 @@ html(lang='ru')
 		script(src="libs/waypoints/waypoints.min.js")
 		script(src="js/main.js")
 		// endbuild
+		<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>

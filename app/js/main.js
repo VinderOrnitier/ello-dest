@@ -13,13 +13,22 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// Попап для логина
+	$('.enter a, .forgot, .to-form, .back-to').magnificPopup({
+		type:'inline',
+		mainClass: 'mfp-form'
+	});
+
+	// Переключение табов в попапе
+	$(".log-tabs").lightTabs();
+
 	// Слайдер http://www.owlcarousel.owlgraphic.com/
 	$(".owl-carousel").owlCarousel({
 		items:1,
 		loop:true,
 		nav:true,
 		autoHeight:true,
-		autoplay:true,
+		// autoplay:true,
 		autoplayHoverPause:true,
 		navText:false,
 		lazyLoad:true,
@@ -46,3 +55,33 @@ $(document).ready(function() {
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 });
+
+// Работа табов в попапе логина
+(function($){
+	jQuery.fn.lightTabs = function(options){
+
+		var createTabs = function(){
+			tabs = this;
+			i = 0;
+
+			showPage = function(i){
+				$(tabs).children("div").children("div").hide();
+				$(tabs).children("div").children("div").eq(i).show();
+				$(tabs).children("ul").children("li").removeClass("active");
+				$(tabs).children("ul").children("li").eq(i).addClass("active");
+			}
+
+			showPage(0);
+
+			$(tabs).children("ul").children("li").each(function(index, element){
+				$(element).attr("data-page", i);
+				i++;
+			});
+
+			$(tabs).children("ul").children("li").click(function(){
+				showPage(parseInt($(this).attr("data-page")));
+			});
+		};
+		return this.each(createTabs);
+	};
+})(jQuery);
