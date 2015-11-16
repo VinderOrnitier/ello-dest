@@ -28,7 +28,7 @@ $(document).ready(function() {
 		loop:true,
 		nav:true,
 		autoHeight:true,
-		// autoplay:true,
+		autoplay:true,
 		autoplayHoverPause:true,
 		navText:false,
 		lazyLoad:true,

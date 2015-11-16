@@ -83,6 +83,9 @@ html {
             transform: rotate(-90deg); } }
 
 @media only screen and (max-width: 812px) {
+  .top-menu .logo-row {
+    padding-top: 15px;
+    margin-bottom: 15px; }
   .menu-social_wrap .menu-social_item {
     margin-right: 3px; }
   .top-menu .hamburger-menu {
@@ -235,7 +238,8 @@ html {
   left: -25px; }
 
 .menu-nav {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  line-height: 1.5; }
   .menu-nav_box {
     line-height: 2; }
   .menu-nav_wrap, .footer-nav_wrap {
@@ -466,16 +470,26 @@ body {
   text-align: center;
   margin: 40px auto 0 auto;
   max-width: 157px; }
-  .features--video h3 {
+  .features--video a {
     color: #FF4040; }
-  .features--audio h3 {
+    .features--video a:hover {
+      color: #FF4040; }
+  .features--audio a {
     color: #90C085; }
-  .features--private h3 {
+    .features--audio a:hover {
+      color: #90C085; }
+  .features--private a {
     color: #504C99; }
-  .features--prodution h3 {
+    .features--private a:hover {
+      color: #504C99; }
+  .features--prodution a {
     color: #F28B30; }
-  .features--promotion h3 {
+    .features--prodution a:hover {
+      color: #F28B30; }
+  .features--promotion a {
     color: #D7A6EF; }
+    .features--promotion a:hover {
+      color: #D7A6EF; }
   .features h3 {
     font-family: "helveticaneuecyr-medium-webfont", sans-serif;
     font-size: 1.25em;
@@ -689,30 +703,29 @@ a.forgot {
 .inside-us {
   background: url(http://music.bigdig.com.ua/images/background/inside-us-bg.png) center no-repeat;
   background-size: cover;
-  min-height: 750px;
   height: 100%;
   width: 100%;
   color: #fff; }
   .inside-us a:hover {
     text-decoration: none; }
 
-.inside-us-wrap h1 {
-  margin: 90px 0 0px;
-  font-family: 'helveticaneuecyr-medium-webfont';
-  font-size: 30px; }
-
-.inside-us-wrap p {
-  margin: 30px 0;
-  font-size: 20px;
-  font-family: 'helveticaneuecyr-thin-webfont', sans-serif; }
-
-.inside-us-wrap ul {
-  padding-left: 40px;
-  width: 350px;
-  list-style: inherit;
-  margin-bottom: 30px;
-  font-family: 'helveticaneuecyr-roman-webfont';
-  font-size: 18px; }
+.inside-us-wrap {
+  margin: 140px 0; }
+  .inside-us-wrap h1 {
+    font-family: 'helveticaneuecyr-medium-webfont';
+    font-size: 30px;
+    margin: 0; }
+  .inside-us-wrap p {
+    margin: 30px 0;
+    font-size: 20px;
+    font-family: 'helveticaneuecyr-thin-webfont', sans-serif; }
+  .inside-us-wrap ul {
+    padding-left: 40px;
+    width: 350px;
+    list-style: inherit;
+    margin-bottom: 30px;
+    font-family: 'helveticaneuecyr-roman-webfont';
+    font-size: 18px; }
 
 .inside-us-wrap .buttons {
   font-family: 'helveticaneuecyr-bold-webfont', sans-serif; }
@@ -867,6 +880,8 @@ footer {
     margin-bottom: 0; }
   .footer-nav_item a {
     color: #fff; }
+    .footer-nav_item a:hover {
+      color: #fff; }
 
 .footer_logo {
   position: relative; }
