@@ -1,0 +1,57 @@
+.container-fluid.contacts
+	.row
+		.col-md-12
+			.contacts-form
+				ul.breadcrumb
+					li
+						a(href='#') Главная
+					li
+						a(href='#') Контакты
+				form.form-horizontal.form-contacts(role='form', data-toggle='validator')
+					fieldset
+						// Form Name
+						legend Сообщение
+						// Select Basic
+						.form-group.contacts-group
+							.col-md-2
+								label.control-label(for='selectbasic') Раздел обращения
+							.col-md-4
+								select#selectbasic.form-control.contacts-select(name='selectbasic')
+									option(value='1') Партнерство
+									option(value='2') Option 2
+									option(value='3') Option 3
+						// Text input
+						.form-group.contacts-group
+							.col-md-2
+								label.control-label(for='name') Имя
+								span.help-block.no-act (не обязательно)
+							.col-md-4
+								input#name.form-control.input-md(name='name', type='name', placeholder='Ваше имя')
+						// Text input
+						.form-group.contacts-group
+							.col-md-2
+								label.control-label(for='email') Email
+								span.help-block (для ответа)
+							.col-md-4
+								input#email.form-control.input-md(name='email', type='email', placeholder='Ваш Email', data-error='Пожалуйста, укажите email', required='')
+								.help-block.with-errors
+						// Text input
+						.form-group.contacts-group
+							.col-md-2
+								label.control-label(for='theme') Тема сообщения
+								span.help-block (для быстрой обработки)
+							.col-md-8
+								input#theme.form-control.input-md(name='theme', type='text', placeholder='')
+						// Textarea
+						.form-group.contacts-group
+							.col-md-2
+								label.control-label(for='massage') Текст
+							.col-md-8
+								textarea#massage.form-control(name='massage')
+						.form-group.contacts-group
+							.col-md-12
+								.recaptcha-box
+									.contacts-recaptcha
+										.g-recaptcha(data-sitekey='your_site_key')
+										br
+										input.buttons(type='submit', value='Отправить')

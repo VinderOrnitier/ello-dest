@@ -10,6 +10,10 @@ html(lang='ru')
 		meta(name='description', content='')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon/favicon.gif', type='image/x-icon')
+		link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+		link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
 		// build:css css/vendor.css
 		// bower:css
 		// endbower
@@ -18,13 +22,44 @@ html(lang='ru')
 		link(rel="stylesheet", href="css/main.css")
 		// endbuild
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==", crossorigin="anonymous")
 	body
 		.body-wrapper
 			//- include exemple
 			include ./templates/header.jade
+			include ./templates/slider-section.jade
 			include ./templates/main.jade
+			include ./templates/video-section.jade
+			include ./templates/contacts-section.jade
 			include ./templates/footer.jade
-
+		.hidden
+			#enter-form.log-tabs
+				ul
+					li Вход
+					li Регистрация
+				div
+					div
+						input(type='email', name='email', placeholder='Email', autocomplete='on', required='')
+						input(type='password', name='password', placeholder='Пароль', required='')
+						.btn-wrapp
+							button.buttons Войти
+						a.forgot(href='#forgot-form') Забыли пароль?
+					div
+						input(type='email', name='email', placeholder='Email', autocomplete='on', required='')
+						input(type='password', name='password', placeholder='Пароль', required='')
+						input(type='password', name='password-sec', placeholder='Повторить пароль', required='')
+						.btn-wrapp
+							button.buttons Зарегистрироваться
+						p
+							| Регистрируясь, вы соглашаетесь с нашими условиями использования и политикой конфиденциальности
+			form#forgot-form.forms
+				h3 Забыли пароль?
+				p
+					| Не переживайте. Просто введите свою эл. почту или логин, и мы вышлем инструкцию по восстановлению
+				input#forgot-email(type='email', name='forgot-email', placeholder='Логин или Email', required='')
+				.btn-wrapp
+					button.buttons Bосстановить пароль
+				a.log-enter.back-to(href='#enter-form') Назад к форме входа
 		<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
 		<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
@@ -35,5 +70,11 @@ html(lang='ru')
 		// endbower
 		// endbuild
 		// build:js scripts/common.js
+		script(src="libs/modernizr/modernizr.js")
+		script(src="libs/animate/animate-css.js")
+		script(src="libs/plugins-scroll/plugins-scroll.js")
+		script(src="libs/waypoints/waypoints.min.js")
+		script(src="libs/validator/validator.min.js")
 		script(src="js/main.js")
 		// endbuild
+		<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>

@@ -9,20 +9,323 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.gif" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <!-- build:css css/vendor.css-->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:css css/common.css-->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   </head>
   <body>
     <div class="body-wrapper">
-      <h1>hello world</h1><i class="fa fa-hand-peace-o"></i>
+      <header>
+        <div class="container-fluid top-menu">
+          <div class="row logo-row">
+            <div class="col-xs-4"><a class="logo"><img src="img/ello-logo.png" alt="ello"></a></div>
+            <div class="col-xs-4">
+              <div class="hamburger-menu">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="enter"><a href="#enter-form" class="enter_icon"><i class="fa fa-sign-in"></i></a><a href="#enter-form" class="enter_text">Войти</a>
+                <select>
+                  <option value="ru">Рус</option>
+                  <option value="eng">Eng</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row menu-nav">
+            <div class="menu-nav_box col-xs-12 col-sm-10">
+              <ul class="menu-nav_wrap">
+                <li class="menu-nav_item"><a href="#">Главная</a></li>
+                <li class="menu-nav_item"><a href="#">Видио</a></li>
+                <li class="menu-nav_item"><a href="#">Аудио</a></li>
+                <li class="menu-nav_item"><a href="#">Партнёрство</a></li>
+                <li class="menu-nav_item"><a href="#">Продвижение</a></li>
+                <li class="menu-nav_item"><a href="#">О компании</a></li>
+                <li class="menu-nav_item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="menu-social col-xs-12 col-sm-2">
+              <ul class="menu-social_wrap">
+                <li class="menu-social_item"><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li class="menu-social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="menu-social_item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="menu-social_item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid main-slider">
+        <div class="row">
+          <div class="slider-section">
+            <div class="owl-carousel new-slider">
+              <div class="new-slide"><img src="http://music.bigdig.com.ua/images/slider/slide1.jpg" alt="alt"></div>
+              <div class="new-slide"><img src="http://music.bigdig.com.ua/images/slider/slide6.jpg" alt="alt"></div>
+              <div class="new-slide"><img src="http://music.bigdig.com.ua/images/slider/slide5.jpg" alt="alt"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid music-sub">
+        <div class="row">
+          <div class="col-md-7 music-access">
+            <ul>
+              <li><a href="#"><img src="http://music.bigdig.com.ua/images/slider/ELLO-s.png" alt="ello"></a></li>
+              <li><a href="#"><img src="http://music.bigdig.com.ua/images/slider/Google-Play.png" alt="google play"></a></li>
+              <li><a href="#"><img src="http://music.bigdig.com.ua/images/slider/iTunes.png" alt="itunes"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 music-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eos. Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid main-content">
+        <div class="row features-wrap">
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <div class="features features--video"><img src="http://music.bigdig.com.ua/images/Video.png" alt="youtube">
+              <h3>Видео</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <div class="features features--audio"><img src="http://music.bigdig.com.ua/images/Note.png" alt="audio">
+              <h3>Аудио</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <div class="features features--private"><img src="http://music.bigdig.com.ua/images/Admin1.png" alt="account">
+              <h3>Личный кабинет</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <div class="features features--prodution"><img src="http://music.bigdig.com.ua/images/Production.png" alt="production">
+              <h3>Видео продакшн</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-12">
+            <div class="features features--promotion"><img src="http://music.bigdig.com.ua/images/promotion.png" alt="promotion">
+              <h3>Раскрутка в соцсетях</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row advantage">
+          <h2>Информация о преимуществах</h2>
+          <div class="col-sm-6">
+            <div class="advantage_item">
+              <div class="row">
+                <div class="col-sm-3 advantage_img"><img src="http://music.bigdig.com.ua/images/Youtube.png" alt="youtube"></div>
+                <div class="col-sm-9 advantage_descr">
+                  <h4>Youtube Партнер</h4>
+                  <p>Размещение ваших видео на все видео площадки Ello в Youtube, вКонтакте, Одноклассниках, Mail.ru, Yandex Видео, Ello.tv, мобильные приложения на iOS/Android/Smart TV и другиe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="advantage_item">
+              <div class="row">
+                <div class="col-sm-3 advantage_img"><img src="http://music.bigdig.com.ua/images/n1.png" alt="n1"></div>
+                <div class="col-sm-9 advantage_descr">
+                  <h4>Продвижение</h4>
+                  <p>Размещение ваших видео на все видео площадки Ello в Youtube, вКонтакте, Одноклассниках, Mail.ru, Yandex Видео, Ello.tv, мобильные приложения на iOS/Android/Smart TV и другиe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row advantage">
+          <div class="col-sm-6">
+            <div class="advantage_item">
+              <div class="row">
+                <div class="col-sm-3 advantage_img"><img src="http://music.bigdig.com.ua/images/TV.png" alt="TV"></div>
+                <div class="col-sm-9 advantage_descr">
+                  <h4>ТВ-Дистрибуция</h4>
+                  <p>Размещение ваших видео на все видео площадки Ello в Youtube, вКонтакте, Одноклассниках, Mail.ru, Yandex Видео, Ello.tv, мобильные приложения на iOS/Android/Smart TV и другиe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="advantage_item">
+              <div class="row">
+                <div class="col-sm-3 advantage_img"><img src="http://music.bigdig.com.ua/images/producer.png" alt="producer"></div>
+                <div class="col-sm-9 advantage_descr">
+                  <h4>Продюссерский центр</h4>
+                  <p>Размещение ваших видео на все видео площадки Ello в Youtube, вКонтакте, Одноклассниках, Mail.ru, Yandex Видео, Ello.tv, мобильные приложения на iOS/Android/Smart TV и другиe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid inside-us">
+        <div class="col-md-6 col-md-offset-1 col-sm-12">
+          <div class="inside-us-wrap">
+            <h1>Лучший способ распространять видео для интернет-пользователей</h1>
+            <p>Присоединяйся к нашему успешному и независимому сообществу</p>
+            <ul>
+              <li>Зарабатывай на своем творчестве</li>
+              <li>Распространи видио всего в два клика на популярных платформах</li>
+              <li>Найди новых поклонников</li>
+            </ul>
+            <div class="btn-wrapp"><a href="#enter-form" class="buttons to-form">Разместить видео</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid contacts">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="contacts-form">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <form role="form" data-toggle="validator" class="form-horizontal form-contacts">
+                <fieldset>
+                  <!-- Form Name-->
+                  <legend>Сообщение</legend>
+                  <!-- Select Basic-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="selectbasic" class="control-label">Раздел обращения</label>
+                    </div>
+                    <div class="col-md-4">
+                      <select id="selectbasic" name="selectbasic" class="form-control contacts-select">
+                        <option value="1">Партнерство</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="name" class="control-label">Имя</label><span class="help-block no-act">(не обязательно)</span>
+                    </div>
+                    <div class="col-md-4">
+                      <input id="name" name="name" type="name" placeholder="Ваше имя" class="form-control input-md">
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="email" class="control-label">Email</label><span class="help-block">(для ответа)</span>
+                    </div>
+                    <div class="col-md-4">
+                      <input id="email" name="email" type="email" placeholder="Ваш Email" data-error="Пожалуйста, укажите email" required="" class="form-control input-md">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="theme" class="control-label">Тема сообщения</label><span class="help-block">(для быстрой обработки)</span>
+                    </div>
+                    <div class="col-md-8">
+                      <input id="theme" name="theme" type="text" placeholder="" class="form-control input-md">
+                    </div>
+                  </div>
+                  <!-- Textarea-->
+                  <div class="form-group contacts-group">
+                    <div class="col-md-2">
+                      <label for="massage" class="control-label">Текст</label>
+                    </div>
+                    <div class="col-md-8">
+                      <textarea id="massage" name="massage" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group contacts-group">
+                    <div class="col-md-12">
+                      <div class="recaptcha-box">
+                        <div class="contacts-recaptcha">
+                          <div data-sitekey="your_site_key" class="g-recaptcha"></div><br>
+                          <input type="submit" value="Отправить" class="buttons">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container-fluid footer_wrap">
+          <div class="row footer_row">
+            <div class="footer_logo col-sm-2"><a class="logo-w"><img src="img/ello-logo-w.png" alt="ello"></a>
+              <div class="footer-hamburger-menu">
+                <div class="footer-bar"></div>
+              </div>
+            </div>
+            <div class="footer-nav col-sm-10">
+              <ul class="footer-nav_wrap">
+                <li class="footer-nav_item"><a href="#">Главная</a></li>
+                <li class="footer-nav_item"><a href="#">Видио</a></li>
+                <li class="footer-nav_item"><a href="#">Аудио</a></li>
+                <li class="footer-nav_item"><a href="#">Партнёрство</a></li>
+                <li class="footer-nav_item"><a href="#">Продвижение</a></li>
+                <li class="footer-nav_item"><a href="#">О компании</a></li>
+                <li class="footer-nav_item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="hidden">
+      <div id="enter-form" class="log-tabs">
+        <ul>
+          <li>Вход</li>
+          <li>Регистрация</li>
+        </ul>
+        <div>
+          <div>
+            <input type="email" name="email" placeholder="Email" autocomplete="on" required="">
+            <input type="password" name="password" placeholder="Пароль" required="">
+            <div class="btn-wrapp">
+              <button class="buttons">Войти</button>
+            </div><a href="#forgot-form" class="forgot">Забыли пароль?</a>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email" autocomplete="on" required="">
+            <input type="password" name="password" placeholder="Пароль" required="">
+            <input type="password" name="password-sec" placeholder="Повторить пароль" required="">
+            <div class="btn-wrapp">
+              <button class="buttons">Зарегистрироваться</button>
+            </div>
+            <p>Регистрируясь, вы соглашаетесь с нашими условиями использования и политикой конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+      <form id="forgot-form" class="forms">
+        <h3>Забыли пароль?</h3>
+        <p>Не переживайте. Просто введите свою эл. почту или логин, и мы вышлем инструкцию по восстановлению</p>
+        <input id="forgot-email" type="email" name="forgot-email" placeholder="Логин или Email" required="">
+        <div class="btn-wrapp">
+          <button class="buttons">Bосстановить пароль</button>
+        </div><a href="#enter-form" class="log-enter back-to">Назад к форме входа</a>
+      </form>
     </div><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
@@ -31,10 +334,19 @@
     <!-- build:js scripts/vendor.js-->
     <!-- bower:js-->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js scripts/common.js-->
+    <script src="libs/modernizr/modernizr.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/plugins-scroll/plugins-scroll.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/validator/validator.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- endbuild-->
+    <!-- endbuild--><script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
   </body>
 </html>

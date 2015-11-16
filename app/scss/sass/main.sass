@@ -1,0 +1,244 @@
+body
+	position: relative
+	min-width: 320px
+	background-color: $bg-color !important
+	font-family: "helveticaneuecyr-roman-webfont", sans-serif
+	font-size: em(14px)
+	overflow-x: hidden
+
+.body-wrapper
+	position: relative
+	max-width: 1500px
+	min-width: 320px
+	margin: 0 auto
+	background-color: #FFF
+	box-shadow: 0 0 15px rgba(0,0,1,0.75)
+
+.hidden
+	display: none
+
+// .top-menu, .main-slider, .music-sub, .main-content, .footer_wrap
+// 	padding: 0 25px
+
+.main-content
+	margin-bottom: 70px
+
+.features
+	text-align: center
+	margin: 40px auto 0 auto
+	max-width: 157px
+
+	&--video
+		h3
+			color: #FF4040
+	&--audio
+		h3
+			color: #90C085
+	&--private
+		h3
+			color: #504C99
+	&--prodution
+		h3
+			color: #F28B30
+	&--promotion
+		h3
+			color: #D7A6EF
+
+	h3
+		font-family: "helveticaneuecyr-medium-webfont", sans-serif
+		font-size: em(20px)
+		text-transform: uppercase
+		margin: 20px auto 10px auto
+		height: 40px
+		width: 120px
+
+	p
+		font-family: "helveticaneuecyr-roman-webfont", sans-serif
+		font-size: em(18px)
+		text-align: left
+
+.features-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-bottom: 50px
+
+.advantage
+
+	h2
+		text-align: center
+		margin-bottom: 30px
+
+	&_item
+		border-right: 1px solid #f0f0f0
+		border-bottom: 1px solid #f0f0f0
+		margin: 5px
+		padding: 10px 40px
+
+	&_img
+		position: relative
+		height: 127px
+
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+
+	&_descr
+
+		h4
+			font-family: "helveticaneuecyr-medium-webfont", sans-serif
+			font-size: em(20px)
+			color: $main-color
+
+		p
+			font-family: "helveticaneuecyr-medium-webfont", sans-serif
+			font-size: em(16px)
+
+
+
+
+.forms
+	position: relative
+	background-color: #fff
+	max-width: 470px
+	padding: 80px
+	margin: 0 auto
+	font-size: 18px
+	text-align: center
+	input
+		display: block
+		width: 100%
+		text-align: center
+		outline: none
+		border: none
+		border-bottom: 1px solid #e5e5e5
+		margin-bottom: 50px
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+	button
+		margin-bottom: 50px
+		outline: none
+	h3
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+		font-size: 20px
+		margin-bottom: 40px
+		color: #2f2f2f
+	p
+		font-size: 16px
+		color: #2f2f2f
+		margin-bottom: 25px
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+
+.form-title
+	display: flex
+	justify-content: space-around
+	margin-bottom: 50px
+
+.mfp-form
+	&.mfp-bg
+		opacity: 0
+		-webkit-transition: all 0.25s ease-out
+		-moz-transition: all 0.25s ease-out
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			-webkit-transition: all 0.25s ease-out
+			-moz-transition: all 0.25s ease-out
+			transition: all 0.25s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+.forms .mfp-close
+	opacity: 0
+
+.form-title a
+	color: #000
+	text-transform: uppercase
+	font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+	font-size: 18px
+	&:hover
+		text-decoration: none
+	&:last-child
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+		color: #999999
+
+a.forgot
+	font-family: 'helveticaneuecyr-light-webfont', sans-serif
+	font-size: 16px
+
+.log-enter.back-to
+	font-family: 'helveticaneuecyr-light-webfont', sans-serif
+	font-size: 16px
+	text-decoration: underline
+
+.log-tabs
+	position: relative
+	background-color: #fff
+	max-width: 470px
+	padding: 60px 80px
+	margin: 0 auto
+	font-size: 18px
+	text-align: center
+	> div
+		padding-top: 10px
+	ul
+		display: flex
+		justify-content: space-around
+		margin-bottom: 30px
+		list-style: none
+		padding: 0
+		li
+			color: #999
+			font-family: 'helveticaneuecyr-light-webfont', sans-serif
+			font-size: 20px
+			cursor: pointer
+			text-transform: uppercase
+			&.active
+				color: #000
+				font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+				&:hover
+					color: #000
+					font-family: 'helveticaneuecyr-medium-webfont', sans-serif
+	input
+		display: block
+		width: 100%
+		text-align: center
+		outline: none
+		border: none
+		border-bottom: 1px solid #e5e5e5
+		margin-bottom: 50px
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+	button
+		margin-bottom: 50px
+		outline: none
+		margin-bottom: 50px
+		outline: none
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+		font-size: 18px
+	p
+		font-size: 16px
+		color: #2f2f2f
+		font-family: 'helveticaneuecyr-light-webfont', sans-serif
+	.mfp-close
+		opacity: 0
+
+.btn-wrapp .buttons
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+	width: 100%
+	display: inline-block
+	padding: 20px 35px
+	background-color: #126AE3
+	border-radius: 15px
+	border: none
+	font-size: 18px
+	outline: none

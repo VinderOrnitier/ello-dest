@@ -1,0 +1,79 @@
+footer
+	background-color: $durk-color
+
+.footer_row
+	margin: 35px 0
+
+.footer-nav
+	@extend .menu-nav
+
+	&_wrap
+		@extend .menu-nav_wrap
+		text-align: right
+		margin-top: 6px
+
+	&_item
+		@extend .menu-nav_item
+
+		&:last-child
+			margin-bottom: 0
+
+		a
+			color: #fff
+
+.footer_logo
+	position: relative
+
+	.footer-hamburger-menu
+		display: none
+		position: absolute
+		top: -6px
+		right: 20px
+
+		.footer-bar,
+		.footer-bar:after,
+		.footer-bar:before 
+			width: $bar-width
+			height: $bar-height
+
+
+		.footer-bar 
+			position: relative
+			cursor: pointer
+			transform: translateY($bar-spacing)
+			background: rgba(255, 255, 255, 1)
+			transition: all 0ms 300ms
+			margin: 10px 0
+
+			&.footer-animate-bar 
+				background: rgba(255, 255, 255, 0) 
+
+
+		.footer-bar:before 
+			content: ""
+			position: absolute
+			left: 0
+			bottom: $bar-spacing
+			background: #fff
+			transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+		.footer-bar:after
+			content: ""
+			position: absolute
+			left: 0
+			top: $bar-spacing
+			background: #fff
+			transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+		.footer-bar.footer-animate-bar:after
+			top: 0
+			transform: rotate(45deg)
+			transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+		.footer-bar.footer-animate-bar:before
+			bottom: 0
+			transform: rotate(-45deg)
+			transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)

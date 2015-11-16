@@ -1,0 +1,75 @@
+.new-slider
+	position: relative
+	overflow: hidden
+	width: 100%
+	max-height: 550px
+	display: block
+
+.new-slide
+	display: block
+	width: 100%
+	img
+		width: 100%
+
+.owl-prev
+	position: absolute
+	top: 50%
+	color: #fff
+	transform: translateY(-50%)
+	opacity: 0.25
+	-webkit-transition: opacity .3s ease-in-out
+	-o-transition: opacity .3s ease-in-out
+	transition: opacity .3s ease-in-out
+
+.owl-next
+	position: absolute
+	top: 50%
+	color: #fff
+	transform: translateY(-50%)
+	opacity: 0.25
+	-webkit-transition: opacity .3s ease-in-out
+	-o-transition: opacity .3s ease-in-out
+	transition: opacity .3s ease-in-out
+	right: 20px
+
+.owl-prev
+	left: 20px
+	&:before
+		content: "\f104"
+		font-family: 'fontawesome', sans-serif
+		font-size: 55px
+
+.owl-next:before
+	content: "\f105"
+	font-family: 'fontawesome', sans-serif
+	font-size: 55px
+
+.owl-prev:hover, .owl-next:hover
+	opacity: 1
+
+.music-sub
+	background-color: $durk-color
+	padding: 25px 0
+
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+
+	li
+		display: inline-block
+		margin-right: 15px
+		margin-bottom: 15px
+
+		&:last-child
+			margin-right: 0
+			margin-bottom: 0
+
+.music-text
+	text-align: right
+	color: #fff
+	font-family: "helveticaneuecyr-roman-webfont", sans-serif
+	font-size: em(18px)
+
+	p
+		margin: 0

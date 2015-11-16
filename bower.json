@@ -9,6 +9,10 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "normalize-css": "normalize.css#~3.0.3",
-    "animate.css": "~3.4.0"
+    "animate.css": "~3.4.0",
+    "waypoints": "~4.0.0",
+    "bootstrap": "~3.3.5",
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
+    "magnific-popup": "~1.0.0"
   }
 }

@@ -1,7 +1,164 @@
-h1
-	color: gold
-	font-family: "helveticaneuecyr-thin-webfont", sans-serif
-	font-size: 40px
-i.fa.fa-hand-peace-o
-	color: #000
-	font-size: 40px
+
+.top-menu
+	font-family: "helveticaneuecyr-roman-webfont", sans-serif
+	font-size: em(16px)
+
+.logo-row
+	padding-top: 10px
+	margin-bottom: 10px
+
+.logo
+	img
+		max-width: 96px
+		width: 100%
+
+.enter
+	text-align: right
+	color: #acacac
+	font-size: em(16px)
+
+	a
+		position: relative
+		color: #acacac
+
+	select
+		position: relative
+		padding-right: 10px
+		background: url(http://music.bigdig.com.ua/images/sprite/arrow-down.png) no-repeat right
+		cursor: pointer
+		outline: none
+		border: none
+		appearance: none
+
+.enter_icon
+	i
+		position: absolute
+		display: none
+		font-size: 25px
+		left: -25px
+
+.menu-nav
+	font-size: em(18px)
+
+	&_box
+		line-height: 2
+
+	&_wrap
+		margin: 0
+		padding: 0
+		list-style: none
+
+	&_item
+		display: inline-block
+		margin-right: 15px
+
+		&:last-child
+			margin-right: 0
+
+		a
+			color: #000
+
+			&:hover
+				color: $main-color
+
+.open-nav
+	display: block
+
+.menu-social
+	text-align: right
+
+	&_wrap
+		margin: 0
+		padding: 0
+		list-style: none
+
+	&_item
+		display: inline-block
+		margin-right: 15px
+		color: #000
+
+		&:nth-child(1)
+			font-size: em(23px)
+			a
+				color: #6383A8
+		&:nth-child(2)
+			font-size: em(21px)
+			a
+				color: #55ACEE
+		&:nth-child(3)
+			font-size: em(19px)
+			a
+				color: #125688
+		&:nth-child(4)
+			font-size: em(19px)
+			a
+				color: #DC4E41
+		&:last-child
+			margin-right: 0
+
+/*=========================================*\
+ *================= START =================
+ *==========Animated Hamburger Menu========
+ *=========================================*/
+$bar-width: 25px
+$bar-height: 3px
+$bar-spacing: 8px
+
+.hamburger-menu
+	display: none
+	margin: 2px auto 0 auto
+	width: $bar-width
+	height: $bar-height + $bar-spacing*2
+	cursor: pointer
+
+
+.bar,
+.bar:after,
+.bar:before 
+	width: $bar-width
+	height: $bar-height
+
+
+.bar 
+	position: relative
+	transform: translateY($bar-spacing)
+	background: $main-color
+	transition: all 0ms 300ms
+
+	&.animate-bar 
+		background: rgba(255, 255, 255, 0) 
+
+
+.bar:before 
+	content: ""
+	position: absolute
+	left: 0
+	bottom: $bar-spacing
+	background: $main-color
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar:after 
+	content: ""
+	position: absolute
+	left: 0
+	top: $bar-spacing
+	background: $main-color
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar.animate-bar:after 
+	top: 0
+	transform: rotate(45deg)
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+
+.bar.animate-bar:before 
+	bottom: 0
+	transform: rotate(-45deg)
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
+
+/*=========================================*\
+ *================= END ===================
+ *=========Animated Hamburger Menu=========
+ *=========================================*/
