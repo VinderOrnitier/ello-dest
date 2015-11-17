@@ -223,7 +223,7 @@ html {
   .enter select {
     position: relative;
     padding-right: 10px;
-    background: url(http://music.bigdig.com.ua/images/sprite/arrow-down.png) no-repeat right;
+    background: url(../img/icons/arrow-down.png) no-repeat right;
     cursor: pointer;
     outline: none;
     border: none;
@@ -860,7 +860,7 @@ input.buttons {
   padding: 20px 0 25px; }
 
 .form-control.contacts-select {
-  background: url(http://music.bigdig.com.ua/images/sprite/arrow-down-sm.png) no-repeat right;
+  background: url(../img/icons/arrow-down-sm.png) no-repeat right;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
